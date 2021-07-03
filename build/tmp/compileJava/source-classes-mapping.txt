@@ -1,0 +1,10 @@
+io/github/pheonixvx/mcpgradle/MCPGradleExtension.java
+ io.github.pheonixvx.mcpgradle.MCPGradleExtension
+io/github/pheonixvx/mcpgradle/MCPGradleTasks.java
+ io.github.pheonixvx.mcpgradle.MCPGradleTasks
+io/github/pheonixvx/mcpgradle/tasks/CleanMCPTask.java
+ io.github.pheonixvx.mcpgradle.tasks.CleanMCPTask
+io/github/pheonixvx/mcpgradle/tasks/AbstractMCPTask.java
+ io.github.pheonixvx.mcpgradle.tasks.AbstractMCPTask
+io/github/pheonixvx/mcpgradle/MCPGradlePlugin.java
+ io.github.pheonixvx.mcpgradle.MCPGradlePlugin

@@ -1,0 +1,38 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+group "${project.mcpgradle_group}"
+version "${project.mcpgradle_version}+" + new Date().format('yyyyMMddHHmmss')
+
+gradlePlugin {
+    plugins {
+        simplePlugin {
+            id = 'io.github.pheonixvx.mcpgradle'
+            implementationClass = 'io.github.pheonixvx.mcpgradle.MCPGradlePlugin'
+        }
+    }
+}
+
+// Fix encoding as a Just-In-Case:tm:
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation gradleApi()
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
