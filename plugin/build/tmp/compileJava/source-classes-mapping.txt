@@ -1,10 +1,40 @@
+io/github/pheonixvx/mcpgradle/misc/RulesItem.java
+ io.github.pheonixvx.mcpgradle.misc.RulesItem
 io/github/pheonixvx/mcpgradle/MCPGradleExtension.java
  io.github.pheonixvx.mcpgradle.MCPGradleExtension
-io/github/pheonixvx/mcpgradle/MCPGradleTasks.java
- io.github.pheonixvx.mcpgradle.MCPGradleTasks
+io/github/pheonixvx/mcpgradle/misc/Natives.java
+ io.github.pheonixvx.mcpgradle.misc.Natives
+io/github/pheonixvx/mcpgradle/misc/Downloads.java
+ io.github.pheonixvx.mcpgradle.misc.Downloads
+io/github/pheonixvx/mcpgradle/misc/AssetIndex.java
+ io.github.pheonixvx.mcpgradle.misc.AssetIndex
 io/github/pheonixvx/mcpgradle/MCPGradlePlugin.java
  io.github.pheonixvx.mcpgradle.MCPGradlePlugin
+io/github/pheonixvx/mcpgradle/misc/Artifact.java
+ io.github.pheonixvx.mcpgradle.misc.Artifact
 io/github/pheonixvx/mcpgradle/tasks/AbstractMCPTask.java
  io.github.pheonixvx.mcpgradle.tasks.AbstractMCPTask
+io/github/pheonixvx/mcpgradle/misc/Os.java
+ io.github.pheonixvx.mcpgradle.misc.Os
+io/github/pheonixvx/mcpgradle/misc/NativesOsx.java
+ io.github.pheonixvx.mcpgradle.misc.NativesOsx
+io/github/pheonixvx/mcpgradle/misc/Classifiers.java
+ io.github.pheonixvx.mcpgradle.misc.Classifiers
+io/github/pheonixvx/mcpgradle/misc/LibrariesItem.java
+ io.github.pheonixvx.mcpgradle.misc.LibrariesItem
+io/github/pheonixvx/mcpgradle/misc/Client.java
+ io.github.pheonixvx.mcpgradle.misc.Client
+io/github/pheonixvx/mcpgradle/misc/NativesLinux.java
+ io.github.pheonixvx.mcpgradle.misc.NativesLinux
 io/github/pheonixvx/mcpgradle/tasks/CleanMCPTask.java
  io.github.pheonixvx.mcpgradle.tasks.CleanMCPTask
+io/github/pheonixvx/mcpgradle/misc/VersionJson.java
+ io.github.pheonixvx.mcpgradle.misc.VersionJson
+io/github/pheonixvx/mcpgradle/misc/NativesWindows.java
+ io.github.pheonixvx.mcpgradle.misc.NativesWindows
+io/github/pheonixvx/mcpgradle/misc/Extract.java
+ io.github.pheonixvx.mcpgradle.misc.Extract
+io/github/pheonixvx/mcpgradle/MCPGradleTasks.java
+ io.github.pheonixvx.mcpgradle.MCPGradleTasks
+io/github/pheonixvx/mcpgradle/tasks/DownloadMCPTask.java
+ io.github.pheonixvx.mcpgradle.tasks.DownloadMCPTask

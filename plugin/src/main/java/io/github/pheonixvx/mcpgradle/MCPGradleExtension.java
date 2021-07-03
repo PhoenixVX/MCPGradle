@@ -19,13 +19,18 @@ public class MCPGradleExtension {
      * This determines what version of Minecraft MCPGradle will download.
      * This must be set, or else MCPGradle will error.
      */
-    public String customVersionJSON = null;
+    public String minecraft = null;
 
     /**
      * This determines what MCPGradle will download as for mappings.
      * This also must be set, or else MCPGradle will error.
      */
-    public String customMappingsURL = null;
+    public String mappings = null;
+
+    /**
+     * This determines what patches MCPGradle will download and use to patch the decompiled code.
+     */
+    public String patches = null;
 
     // Unsettable properties
 
@@ -68,5 +73,17 @@ public class MCPGradleExtension {
         }
 
         return nativesFolder;
+    }
+
+    public void minecraft(String minecraftVersionJSON) {
+        this.minecraft = minecraftVersionJSON;
+    }
+
+    public void mappings(String mappingsUrl) {
+        this.mappings = mappingsUrl;
+    }
+
+    public void patches(String patchesUrl) {
+        this.patches = patchesUrl;
     }
 }

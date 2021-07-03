@@ -10,6 +10,12 @@ repositories {
     mavenCentral()
 }
 
+mcpgradle {
+    minecraft('https://launchermeta.mojang.com/v1/packages/8b6e0c4f183ffb61b6a0c818787b0499b315123e/rd-132211.json')
+    mappings('https://gist.githubusercontent.com/PheonixVX/953a9759855b10bc905c9e21dbed97b0/raw/f283a97206326b2b02e75bee698bec0e78c01f08/mappings.tiny')
+    patches(null)
+}
+
 dependencies {
     implementation gradleApi()
 

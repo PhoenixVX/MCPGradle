@@ -1,15 +1,18 @@
 package io.github.pheonixvx.mcpgradle;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 import org.gradle.api.plugins.PluginAware;
-import org.gradle.internal.impldep.com.google.common.collect.ImmutableMap;
+import com.google.common.collect.ImmutableMap;
 
 public class MCPGradlePlugin implements Plugin<PluginAware> {
 
     public static final Logger LOGGER = LogManager.getLogger("MCPGradle");
+    public static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
     @Override
     public void apply(PluginAware target) {
@@ -28,8 +31,7 @@ public class MCPGradlePlugin implements Plugin<PluginAware> {
         project.apply(ImmutableMap.of("plugin", "idea"));
 
         // Setup extensions
-        project.getExtensions().create("minecraft", MCPGradleExtension.class, project);
-        project.getExtensions().add("io/github/pheonixvx/mcpgradle", project.getExtensions().getByName("minecraft"));
+        project.getExtensions().create("mcpgradle", MCPGradleExtension.class, project);
 
         // Setup configuration
         MCPGradleTasks.registerTasks(project);
